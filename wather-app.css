@@ -1,0 +1,116 @@
+body{
+    background: linear-gradient(45deg,#4b4949, #aa9d9d,#d48989,#312626 );
+    box-sizing: border-box;
+    height: 100dvh,100vh;
+    color: rgb(36, 28, 28);
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background-size: 300% 300%;
+}
+h1{
+    font-size: clamp(1rem, 5vw , 3rem);
+    font-weight: bold;
+}
+.main-wraper{
+    margin-top: 20px;
+    display: grid;
+    justify-content: center;
+    
+    
+}
+.input-box{
+    height: 50px;
+    max-width: 500px;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 30px;
+    padding-left: 30px;
+    box-shadow:inset 3px 3px 3px rgba(0, 0, 0, 0.3);
+    background: transparent;
+    border: 1px solid white;
+    color: (36, 28, 28);
+    margin-bottom: 10px;
+    flex: 1;
+    
+    
+}
+
+
+.input-box::placeholder{
+    color: white;
+    opacity: .3;
+}
+.scr-btn{
+    margin-left: 10px;
+   height: 45px;
+   width: 120px;
+   font-size: 1.2rem;
+   border-radius: 10px;
+   cursor: pointer;
+   transition: opacity 0.2s;
+   flex: 1;
+  
+}
+.reset-btn{
+    margin-left: 10px;
+    height: 45px;
+    width: 120px;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: opacity 0.2s;
+    flex: 1;
+}
+.reset-btn:active{
+    opacity: 0.2;
+}
+.scr-btn:active{
+    opacity: 0.2;
+}
+.display-section{
+    font-size:clamp(1rem,5vw,2rem);
+    position: relative;
+}
+.local-Clock{
+font-size: clamp(1rem,5vw,2rem);
+margin-top: 0px;
+    
+}
+.display-result-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    justify-content:space-between;
+    align-items: center;
+}
+.forecast-display{
+    font-size:clamp(1rem,5vw,2rem);
+    margin-right: 20px;
+    margin-top: 20px;
+}
+.temp{
+    position: absolute;
+   transform: translateX(-90%)
+   translateY(-35%);
+   font-size: clamp(1rem,5vw,2.5rem);
+}
+.header-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media(max-width: 600px){
+    .input-Elm{
+        display: flex;
+        flex: 1;
+       flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+
+    
+    
+}
