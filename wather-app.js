@@ -1,6 +1,7 @@
+import {config} from './config.js'
 const inputElm = document.querySelector('.input-box');
 const btnElm  = document.querySelector('.scr-btn');
-const APIkey = 'e3077481415d8e6b308726999d953833'
+const APIkey = config.APIKey;
 const displayEml  = document.querySelector('.display-section');
 const displaySun = document.querySelector('.forecast-display');
 
@@ -14,7 +15,7 @@ setInterval(()=>{
 btnElm.addEventListener('click', ()=>{
     
     const city = inputElm.value;
-    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${APIkey}&units=metric`)
+    fetch(`${config.baseURL}/data/2.5/weather?q=${city}&appid=${APIkey}&units=metric`)
     .then (response=> response.json())
     .then(data =>{ console.log(data)
         displayEml.innerHTML = `<h2>${data.name}, ${data.sys.country}</h2>
