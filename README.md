@@ -1,13 +1,13 @@
 # Weather App - Simple Weather App
 API Call Weather App crated by JavaScript and HTML and responsive UI using CSS.
 
-##features
-->  API Call For Weather Data.
-->  Hide API Link And API KEY in config.js file.
--> Search Every CITY for weather.
-->  Base Temperature Degree Celsius Format.
--> 7 Days forecast.
--> windspeed, humidity, sunrise, sunset
+## Features
+- API Call For Weather Data.
+- Hide API Link And API KEY in config.js file.
+- Search Every CITY for weather.
+- Base Temperature Degree Celsius Format.
+- 7 Days forecast.
+- windspeed, humidity, sunrise, sunset
 
 
 
